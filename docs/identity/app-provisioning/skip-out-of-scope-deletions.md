@@ -77,6 +77,11 @@ Copy the updated text from Step 3 into the "Request Body".
 
 Select “Run Query”. 
 
+You might have to change the API to use v1.0 instead of beta.  If so the command would look like this
+```http
+   PUT https://graph.microsoft.com/v1.0/servicePrincipals/[servicePrincipalId]/synchronization/secrets
+```
+
 You should get the output as "Success – Status Code 204". If you receive an error, you may need to check that your account has Read/Write permissions for ServicePrincipalEndpoint. You can find this permission by clicking on the *Modify permissions* tab in Graph Explorer.
 
    ![Screenshot of PUT response.](./media/skip-out-of-scope-deletions/skip-06.png)
